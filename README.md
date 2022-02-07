@@ -1,37 +1,15 @@
-# Quasar App (tyrell)
-
-A Quasar Framework app
-
-## Install the dependencies
-
-```bash
-yarn
+## Building docker image
+```
+$ docker build -t tyrell-frontend .
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-
-```bash
-quasar dev
+## Running docker image
+```
+$ docker run -d -8080:8080 tyrell-frontend
 ```
 
-### Lint the files
-
-```bash
-yarn lint
+## Running the app on browser (swagger)
 ```
+$ http://localhost:8080
 
-### Format the files
-
-```bash
-yarn format
 ```
-
-### Build the app for production
-
-```bash
-quasar build
-```
-
-### Customize the configuration
-
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
